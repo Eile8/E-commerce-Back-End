@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eile8/E-commerce-Back-End.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eile8/E-commerce-Back-End/issues"
+  },
+  "homepage": "https://github.com/Eile8/E-commerce-Back-End#readme",
+  "dependencies": {
+    "module": "^1.2.5",
+    "node": "^14.21.0"
+  }
+}
