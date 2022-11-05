@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   Tag.findAll({
     include: [{
       model: Product, 
-      model: ProductTag,
+      through: ProductTag,
     }]
   }) 
     .then ((allTag) => {
@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
   Tag.findByPk(req.params.id, {
     include: [{
       model: Product,  
-      model: ProductTag
+      through: ProductTag
     }]
   }). then((oneTag)=> {
     if(!oneTag){

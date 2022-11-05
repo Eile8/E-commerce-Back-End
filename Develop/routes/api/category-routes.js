@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Product } = require('../../models');
+const { Category, Product, ProductTag } = require('../../models');
 
 // The `/api/categories` endpoint
 
@@ -22,6 +22,7 @@ router.get('/:id', async (req, res) => {
   Category.findByPk(req.params.id, {
     include: [{
       model: Product, 
+      through: ProductTag
     }]
   }). then((oneProduct)=> {
     if(!oneProduct){
